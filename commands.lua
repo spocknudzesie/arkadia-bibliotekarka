@@ -287,7 +287,7 @@ end
 function scripts.bibliotekarka:echoBookLink(number, title)
     local path
     path = self:getBookPath(self.guild, self.section, title)
-    print("BOOK LINK " .. title)
+    -- print("BOOK LINK " .. title)
 
     if not self.section then
         return

@@ -89,8 +89,8 @@ function scripts.bibliotekarka:loadData(gildia)
 
     self:msg('warn', string.format('Wczytuje dane gildii %s z pliku %s', gildia, filename))
     table.load(filename, data)
-    print("Dane wczytane:")
-    print(dump_table(data))
+    -- print("Dane wczytane:")
+    -- print(dump_table(data))
     self.data.guilds[gildia] = data
     return data
 
@@ -100,7 +100,7 @@ end
 function scripts.bibliotekarka:init()
     lfs.mkdir(getMudletHomeDir() .. '/bibliotekarka')
     self:killEventHandler()
-    self:msg('ok', "Plugin zaladowany. Uzyj komendy /bib_pomoc, aby zapoznac sie z dzialanie.")
+    self:msg('ok', "Plugin zaladowany. Uzyj komendy /bib_pomoc, aby zapoznac sie z dzialaniem.")
 end
 
 
